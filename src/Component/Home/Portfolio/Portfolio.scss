@@ -1,0 +1,64 @@
+.portfolio {
+  padding-bottom: 40px;
+  .title-container {
+    .title {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .title-text {
+        text-align: center;
+        color: #009760;
+        max-width: 700px;
+        .button-container {
+          button {
+            border: 1px solid #009760;
+            color: #009760;
+            &:hover {
+              background: #0097605f;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .items-lists {
+    justify-content: center;
+    align-items: center;
+    .card {
+      width: 300px;
+      height: 220px;
+      border-radius: 20px;
+      border: 1px solid #05233b;
+      color: #fff;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+      cursor: pointer;
+      padding: 0;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        object-fit: cover;
+      }
+
+      h3 {
+        position: absolute;
+        text-align: center;
+      }
+      &:hover {
+        background: #009760;
+        img {
+          opacity: 0.4;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}

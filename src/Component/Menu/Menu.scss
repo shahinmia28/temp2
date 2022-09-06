@@ -1,0 +1,39 @@
+.menu {
+  background-color: #303c3f;
+  height: 100%;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: -250px;
+  z-index: 2;
+  color: #fff;
+  transition: all 0.5s ease;
+  opacity: 0;
+
+  ul {
+    width: 90%;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+    li {
+      cursor: pointer;
+      margin: 10px 0;
+      a {
+        color: inherit;
+        text-decoration: none;
+        text-transform: capitalize;
+        &:hover {
+          color: #98bec7;
+        }
+      }
+    }
+  }
+
+  &.active {
+    right: 0px;
+    opacity: 1;
+  }
+}

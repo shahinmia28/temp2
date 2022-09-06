@@ -1,0 +1,15 @@
+$base-color: #009760;
+$hover-color: #0097602a;
+
+.app {
+  .body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
