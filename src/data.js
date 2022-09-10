@@ -238,7 +238,7 @@ export const testimonial = [
   },
   {
     id: 2,
-    name: "Abbaset Akanda",
+    name: "Ab Baset Akanda",
     title: "Principal fo High School",
     img: "../image/tman2.jpg",
     icon: "assets/youtube.png",

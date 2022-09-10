@@ -4,6 +4,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+You have to install
+
+### `npx create-react-app (name)`
+
+### `npm install @emailjs/browser --save`
+
+### `npm i react-router-dom`
+
+### `npm i bootstrap`
+
+### `npm i node-sass`
+
+### `npm i typewriter-effect`
+
 In the project directory, you can run:
 
 ### `npm start`
