@@ -15,7 +15,7 @@ const About = () => {
   window.addEventListener("scroll", animation);
 
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="container">
         <div className="about-container">
           <div className="info-box row">
@@ -45,7 +45,7 @@ const About = () => {
             </div>
             <div className="col-12 col-md-6">
               <div className="personal-data p-2">
-                <div className="about-title">
+                <div className="my-title">
                   <h2>About Me</h2>
                   <div className="title-underLine"></div>
                 </div>

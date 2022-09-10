@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { footerMenuData } from "../../data";
 import CopyWrite from "./CopyRight";
 import "./Footer.scss";
 const Footer = () => {
@@ -6,7 +8,7 @@ const Footer = () => {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
         <path
           fill="#00c57d"
-          fill-opacity="1"
+          fillOpacity="1"
           d="M0,160L120,138.7C240,117,480,75,720,58.7C960,43,1200,53,1320,58.7L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
         ></path>
       </svg>
@@ -16,10 +18,12 @@ const Footer = () => {
           <div className="row">
             <div className="col-12 col-md-4 footer-logo text-center ">
               <h1>
-                <a href="#intro">Shahin M.</a>
+                <a href="#intro" className="nav-link">
+                  Shahin M.
+                </a>
               </h1>
             </div>
-            <div className="contact col-12 col-md-8">
+            <div className="footer-contact col-12 col-md-8">
               <ul className="contact-details">
                 <li>
                   <i className="fa-solid fa-location-dot"></i>
@@ -36,18 +40,12 @@ const Footer = () => {
               </ul>
 
               <ul className="footer-menu">
-                <li>
-                  <i className="fa-solid fa-code"></i>
-                  <a href="#">Terms and Condition</a>
-                </li>
-                <li>
-                  <i className="fa-solid fa-lock"></i>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <i className="fa-solid fa-circle-info"></i>
-                  <a href="#">Help Center</a>
-                </li>
+                {footerMenuData.map((d, i) => (
+                  <li key={i}>
+                    <i className={d.icon}></i>
+                    <Link to={"/underConstruction"}>{d.name}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

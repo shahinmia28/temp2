@@ -1,15 +1,9 @@
 .testimonial {
-  background: #fff;
+  background: linear-gradient(to bottom, #d0ffef 0%, #ffffff 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 70px;
-  padding-bottom: 40px;
-
-  h2 {
-    font-size: 50px;
-    margin: 30px;
-  }
+  padding: 60px 0;
 
   .container {
     padding: 40px 0;
@@ -52,7 +46,7 @@
         p {
           padding: 10px;
           border-radius: 10px;
-          background-color: #fdeaed;
+          background: linear-gradient(to bottom, #d0ffef 0%, #e8fff7 100%);
         }
         h4 {
           margin-top: 30px;

@@ -5,7 +5,7 @@ const CopyWrite = () => {
   return (
     <div className="copyRight">
       <div className="row">
-        <div className="col-12 col-md-6 text-center text-md-start copy">
+        <div className="col-12 col-md-6 text-center text-md-start copy d-none d-md-block">
           <span> &copy; All right are reserved by Shahin mia</span>
         </div>
         <div className="col-12 col-md-6 social m-auto">
@@ -21,6 +21,9 @@ const CopyWrite = () => {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="col-12 col-md-6 text-center text-md-start copy d-block d-md-none">
+          <span> &copy; All right are reserved by Shahin mia</span>
         </div>
       </div>
     </div>

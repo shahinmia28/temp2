@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { NavMenuLists } from "../../data";
+import { useState } from "react";
+import { NavMenuLists } from "../../../data";
 import { Link } from "react-router-dom";
 import "./NavMenu.scss";
 
@@ -19,9 +19,9 @@ const NavMenu = () => {
   return (
     <nav className={navBar ? "navigation-bar scroll" : "navigation-bar"}>
       <h1>
-        <Link to={"/"} className="nav-link">
+        <a href="#" className="nav-link">
           Shahin M.
-        </Link>
+        </a>
       </h1>
 
       <ul
@@ -32,7 +32,11 @@ const NavMenu = () => {
       >
         {NavMenuLists.map((d, i) => (
           <li key={i}>
-            <a className="nav-link" href="">
+            <a
+              className="nav-link"
+              href={`#${d.name}`}
+              onClick={() => setClick(false)}
+            >
               {d.name}
             </a>
           </li>

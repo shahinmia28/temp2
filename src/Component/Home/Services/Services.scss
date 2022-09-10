@@ -1,28 +1,6 @@
-.portfolio {
-  padding-bottom: 40px;
-  .title-container {
-    .title {
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .title-text {
-        text-align: center;
-        color: #009760;
-        max-width: 700px;
-        .button-container {
-          button {
-            border: 1px solid #009760;
-            color: #009760;
-            &:hover {
-              background: #0097605f;
-            }
-          }
-        }
-      }
-    }
-  }
-
+.services {
+  padding: 60px 0;
+  background: linear-gradient(to top, #d0ffef 0%, #ffffff 100%);
   .items-lists {
     justify-content: center;
     align-items: center;

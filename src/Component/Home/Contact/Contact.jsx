@@ -36,66 +36,60 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="container">
-        <div className="contact-info-container">
-          <div className="row">
-            <div className="col-12 col-md-6 contact-info">
-              <div className="address">
-                <div className="contact-title">
-                  <h2>Contact Us</h2>
-                  <div className="title-underLine"></div>
-                </div>
-
-                <div className="form-box p-3">
-                  <form ref={form} onSubmit={sendEmail}>
-                    <input
-                      type="name"
-                      name="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      placeholder="Enter Name"
-                      className="form-control"
-                    />
-                    <input
-                      type="email"
-                      name="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter Email"
-                      className="form-control"
-                    />
-                    <textarea
-                      name="message"
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                      cols="90"
-                      rows="4"
-                      className="form-control"
-                      placeholder="Write your massage..."
-                    ></textarea>
-
-                    <input
-                      type="submit"
-                      value="Send"
-                      className="btn contact-btn"
-                    />
-                    <span className="mx-2">{confirm}</span>
-                  </form>
-                </div>
+        <div className="row">
+          <div className="col-12 col-md-6 form-container">
+            <div className="form-box p-3">
+              <div className="my-title">
+                <h2>contact us</h2>
+                <div className="title-underLine"></div>
               </div>
-            </div>
+              <form ref={form} onSubmit={sendEmail}>
+                <input
+                  type="name"
+                  name="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Enter Name"
+                  className="form-control"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter Email"
+                  className="form-control"
+                  required
+                />
+                <textarea
+                  name="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  cols="90"
+                  rows="4"
+                  className="form-control"
+                  placeholder="Write your massage..."
+                  required
+                ></textarea>
 
-            <div className="col-12 col-md-6 map-container">
-              <div className="mapouter">
-                <div className="gmap_canvas">
-                  <iframe
-                    id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=bhuapur,%20tangail,%20dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    frameBorder="0"
-                    scrolling="no"
-                    marginHeight="0"
-                    marginWidth="0"
-                  ></iframe>
-                </div>
+                <input type="submit" value="Send" className="btn contact-btn" />
+                <span className="mx-2">{confirm}</span>
+              </form>
+            </div>
+          </div>
+
+          <div className="col-12 col-md-6 map-container">
+            <div className="mapouter">
+              <div className="gmap_canvas">
+                <iframe
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=bhuapur,%20tangail,%20dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameBorder="0"
+                  scrolling="no"
+                  marginHeight="0"
+                  marginWidth="0"
+                ></iframe>
               </div>
             </div>
           </div>

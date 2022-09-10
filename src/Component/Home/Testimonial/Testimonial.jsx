@@ -4,7 +4,10 @@ import { testimonial } from "../../../data";
 const Testimonial = () => {
   return (
     <div className="testimonial" id="testimonial">
-      <h2>Testimonial</h2>
+      <div className="my-title">
+        <h2>Testimonial</h2>
+        <div className="title-underLine"></div>
+      </div>
       <div className="container row">
         {testimonial.map((data, index) => (
           <div
